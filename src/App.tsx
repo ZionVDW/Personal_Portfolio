@@ -1,5 +1,6 @@
 import './styles/App.css';
 import Layout from './components/Layout';
+import cv from './assets/CV_Zion_Van_der_Wee.pdf';
 
 export default function App() {
   return (
@@ -10,12 +11,14 @@ export default function App() {
         </div>
         <div className="flex flex-col space-y-6 py-8">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hallo, ik ben Zion Van der Wee, een gedreven Developer en UI Designer met een scherp oog voor front-end ontwikkeling en het creëren van uitstekende gebruikersinterfaces. Met een Bachelor in Toegepaste Informatica en Digital Experience
+            Design ben ik goed onderlegd in het ontwerpen van intuïtieve en boeiende digitale ervaringen. Mijn technische vaardigheden en creatieve inzicht stellen me in staat om visueel aantrekkelijke en gebruiksvriendelijke applicaties te bouwen.
+            Ik streef ernaar om de perfecte balans te vinden tussen esthetiek en functionaliteit, en ik ben altijd op zoek naar nieuwe manieren om de gebruikerservaring te verbeteren.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Naast mijn professionele passie, vind ik ontspanning in het spelen van games en het kijken van films en series. Deze hobby's inspireren me en helpen me om op de hoogte te blijven van de nieuwste trends en innovaties in de digitale wereld.
+            Ze verrijken mijn creatieve denkproces en geven me nieuwe ideeën die ik kan toepassen in mijn werk. Door mijn veelzijdige interesses en toewijding aan zowel technologie als design, ben ik in staat om unieke en effectieve oplossingen te
+            creëren die voldoen aan de behoeften van gebruikers en opdrachtgevers.
           </p>
         </div>
         <div className="flex space-x-4 justify-center py-4">
@@ -37,7 +40,7 @@ export default function App() {
           </div>
         </div>
         <div className="pt-12">
-          <a href="/path/to/your/cv.pdf" download>
+          <a href={cv} download>
             <button className="bg-[#1D231E] hover:bg-[#FAFAEA] hover:text-black text-white font-bold py-2 px-4 rounded">Download CV</button>
           </a>
         </div>

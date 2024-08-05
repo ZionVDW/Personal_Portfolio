@@ -1,5 +1,6 @@
 import { GithubLogo, LinkedinLogo, MicrosoftOutlookLogo } from '@phosphor-icons/react';
 import { Link } from 'react-router-dom';
+import profilepic from '../assets/profilepic.png';
 
 const Sidebar = () => {
   const currentpath = window.location.pathname;
@@ -8,7 +9,7 @@ const Sidebar = () => {
       <div className="flex flex-col justify-between h-full">
         <div>
           <div className="pb-4">
-            <img src="https://placehold.co/220" className="rounded-[45px] mx-auto" alt="Zion Van der Wee" width={220} height={220} />
+            <img src={profilepic} className="rounded-[45px] mx-auto" alt="Zion Van der Wee" width={220} height={220} />
           </div>
           <h1 className="text-[#FAFAEA] text-3xl font-bold">Zion Van der Wee</h1>
           <p className="text-[#FAFAEA] text-base">UI/UX Designer - Developer</p>
@@ -33,13 +34,13 @@ const Sidebar = () => {
           </ul>
         </div>
         <div className="flex flex-row justify-center gap-4">
-          <a href="" className="text-[#FAFAEA]">
+          <a href="https://www.linkedin.com/in/zion-van-der-wee-6a302a1b8/" className="text-[#FAFAEA] hover:text-[#7E7E7E]">
             <LinkedinLogo size={42} />
           </a>
-          <a href="" className="text-[#FAFAEA]">
+          <a href="https://github.com/ZionVDW" className="text-[#FAFAEA] hover:text-[#7E7E7E]">
             <GithubLogo size={42} />
           </a>
-          <a href="" className="text-[#FAFAEA]">
+          <a href="mailto:zion.vanderwee@hotmail.com" className="text-[#FAFAEA] hover:text-[#7E7E7E]">
             <MicrosoftOutlookLogo size={42} />
           </a>
         </div>

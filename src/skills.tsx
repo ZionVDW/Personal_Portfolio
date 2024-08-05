@@ -3,27 +3,26 @@ import ListItem from './components/ListItem';
 
 const Skills = () => {
   const Languages = [
-    { name: 'Nederlands', percentage: 60 },
-    { name: 'Engels', percentage: 80 },
-    { name: 'Frans', percentage: 50 },
+    { name: 'Nederlands', percentage: 100 },
+    { name: 'Engels', percentage: 90 },
+    { name: 'Frans', percentage: 30 },
   ];
   const Development = [
-    { name: 'HTML', percentage: 60 },
+    { name: 'HTML', percentage: 80 },
     { name: 'CSS', percentage: 80 },
-    { name: 'Javascript', percentage: 50 },
-    { name: 'React', percentage: 60 },
-    { name: 'Next.js', percentage: 80 },
-    { name: 'Tailwind CSS', percentage: 50 },
-    { name: 'Node.js', percentage: 60 },
-    { name: 'Express', percentage: 80 },
-    { name: 'MongoDB', percentage: 50 },
+    { name: 'Javascript', percentage: 80 },
+    { name: 'Typescript', percentage: 80 },
+    { name: 'React', percentage: 75 },
+    { name: 'Vue', percentage: 60 },
+    { name: 'Angular', percentage: 60 },
+    { name: 'Tailwind CSS', percentage: 60 },
+    { name: 'Next.js', percentage: 55 },
   ];
   const Design = [
-    { name: 'Adobe XD', percentage: 60 },
     { name: 'Figma', percentage: 80 },
-    { name: 'Photoshop', percentage: 50 },
-    { name: 'Illustrator', percentage: 60 },
-    { name: 'After Effects', percentage: 80 },
+    { name: 'Illustrator', percentage: 70 },
+    { name: 'User Testing', percentage: 50 },
+    { name: 'Spline', percentage: 40 },
   ];
   return (
     <Layout>
