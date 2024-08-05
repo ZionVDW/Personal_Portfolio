@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { CaretRight } from '@phosphor-icons/react';
 import Layout from './components/Layout';
 import { supabase } from './client';
+import { useEffect, useState } from 'react';
 
 interface Projects {
   id: string;
@@ -36,10 +37,10 @@ const Projects: React.FC = () => {
         </div>
         <div className="flex flex-col space-y-8">
           {projects.map((project) => (
-            <div key={project.id} className="bg-[#1D231E] p-6 rounded-lg flex flex-row justify-between">
+            <Link key={project.id} to={`/projects/${project.id}`} className="bg-[#1D231E] p-6 rounded-lg flex flex-row justify-between">
               <h2 className="text-3xl font-bold">{project.title}</h2>
               <CaretRight size={36} />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
